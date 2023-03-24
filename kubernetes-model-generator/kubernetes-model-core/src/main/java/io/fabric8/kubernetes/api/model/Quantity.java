@@ -59,6 +59,7 @@ public class Quantity implements Serializable {
   private static final String AT_LEAST_ONE_DIGIT_REGEX = ".*\\d+.*";
   private String amount;
   private String format = "";
+  @JsonIgnore
   private Map<String, Object> additionalProperties = new HashMap<>();
 
   /**
